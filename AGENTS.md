@@ -1,38 +1,65 @@
 # Agent Policy
 
-このリポジトリでの AI エージェント運用方針を定義します。
+このファイルは、このリポジトリで AI エージェントが新規セッション開始時に必ず従う運用ルールの要約です。
 
-## Primary Use
+## Scope
 
-- Issue 作成・更新
-- PR 作成・更新
-- コミット作成・プッシュ
-- ドキュメント整備
-- レビュー補助（観点整理、チェックリスト化）
+- 対応対象:
+  - Issue 作成・更新
+  - PR 作成・更新
+  - コミット作成・プッシュ
+  - ドキュメント整備
+  - レビュー補助（観点整理、チェックリスト化）
+- 非対応:
+  - arai60 / LeetCode 問題の解答・ヒント・方針・擬似コード・計算量比較
+  - 学習者の代わりに問題を解く行為
 
-## Do Not
+解答依頼を受けた場合は対応不可を明示し、Issue / PR / ドキュメント運用へ切り替える。
 
-- arai60 / LeetCode の問題の解答に関する質問へ対応しない
-- 解法、ヒント、方針、擬似コード、計算量比較を提供しない
-- 学習者の代わりに問題を解く行為をしない
+## Canonical Docs
 
-## Recommended Response Style
+実運用の正本は次のドキュメント:
 
-- 問題の解答に関する依頼を受けた場合は、対応不可であることを明確に伝える
-- 代わりに Issue / PR / ドキュメント運用タスクへの切り替えを案内する
+- `CONTRIBUTING.md`
+- `docs/10_workflow/branch-strategy.md`
+- `docs/10_workflow/commit-rules.md`
+- `docs/10_workflow/issue-labels.md`
+- `docs/10_workflow/project-board-operations.md`
+- `docs/20_repository/directory-structure.md`
+- `docs/00_setup/agent-command-permissions.md`
+
+矛盾時は上記ドキュメントを優先する。
+
+## Language Policy (Required)
+
+- Issue のタイトル・本文・コメントは日本語で記述する
+- PR のタイトル・本文・コメントは日本語で記述する
+- コミットメッセージは日本語で記述する
+- 例外: コード識別子・コマンド・URL・外部仕様名（例: `TypeScript`, `LeetCode`）は英語表記を許容
+
+## Workflow Rules (Required)
+
+- `main` へ直接 push しない（PR経由のみ）
+- ブランチ名は `{type}/{problem-name}` を使う
+- `solve/*` / `fix/*` / `chore/*` から `main` へのマージは `Squash and merge` を使う
+- すべてのコミットメッセージに `Refs #<issue-number>` を含める
+- PR本文に `Refs #<issue-number>` を含める
+- Issue はラベル（`status/*`, `priority/*`, `type/*`）で管理し、`status/*` は常に1つだけ付ける
+- 問題ディレクトリは `solutions/leetcode/{problem-slug}/` を必須とする
+- 実装言語は TypeScript に統一する
 
 ## Command Permission Policy
 
-Issue / PR / コミット運用をエージェントに任せるため、次のコマンド系統を許可対象とします。
+許可対象:
 
-- `gh issue *`（一覧、作成、編集、コメント、クローズ）
-- `gh pr *`（一覧、作成、編集、レビュー、マージ）
-- `gh project *`（一覧、項目更新）
+- `gh issue *`
+- `gh pr *`
+- `gh project *`
 - `git add`, `git commit`, `git push`, `git pull`, `git fetch`, `git switch`
 
-制限:
+禁止:
 
-- 破壊的操作（`git reset --hard`, `git checkout --`, `git clean -fd` など）は許可しない
-- 解答生成に関する作業は行わない
+- 破壊的操作（`git reset --hard`, `git checkout --`, `git clean -fd` など）
+- 解答生成に関する作業
 
 詳細は `docs/00_setup/agent-command-permissions.md` を参照すること。

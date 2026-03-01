@@ -26,6 +26,7 @@
 - `docs/00_setup/environment-setup.md`
 - `CONTRIBUTING.md`
 - `AGENTS.md`
+- `AGENT.md`（互換エントリ）
 
 運用ルールの詳細:
 
