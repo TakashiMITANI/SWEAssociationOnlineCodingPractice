@@ -47,13 +47,14 @@
 - レビューで最終合意した決定事項は `solutions/leetcode/{problem-slug}/README.md` に反映する
 - PR作成時は `.github/pull_request_template.md` のチェックを満たす
 - `main` にマージ後は対象ブランチを削除する（remote/local）
+- PR のタイトル・本文・コメントは日本語で記述する
 
 ## Main Protection Rule
 
 GitHub の `main` ブランチ保護で次を必須にします。
 
 - Require a pull request before merging
-- Require approvals: 1
+- Require approvals: 0（現運用）
 - Dismiss stale pull request approvals when new commits are pushed
 - Require status checks to pass before merging（導入後のCIチェック名を対象に設定）
 - Require branches to be up to date before merging

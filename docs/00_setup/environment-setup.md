@@ -62,7 +62,7 @@ Press Enter to open github.com in your browser...
 初期設定チェックリスト:
 
 - `Require a pull request before merging` を有効化
-- `Require approvals` を 1 以上に設定
+- `Require approvals` を 0 に設定（現運用）
 - `Require status checks to pass before merging` を有効化
 - `Block force pushes` / `Block deletions` を有効化
 - `.github/pull_request_template.md` と `.github/ISSUE_TEMPLATE/learning-task.yml` が有効であることを確認

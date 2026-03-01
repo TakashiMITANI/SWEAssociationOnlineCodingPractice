@@ -6,6 +6,7 @@
 
 - すべてのコミットメッセージに Issue 番号を含める
 - 形式は `Refs #<issue-number>` を必須とする
+- コミットメッセージ（subject/body）は日本語で記述する
 
 例:
 
@@ -17,6 +18,13 @@
 - PR本文には `Refs #<issue-number>` を記載する
 - `main` マージ後は `status/done` を確認してから Issue をクローズする
 - コミット内でも PR本文でも `Closes` は使わない
+
+## Language Rule
+
+- Issue のタイトル・本文・コメントは日本語で記述する
+- PR のタイトル・本文・コメントは日本語で記述する
+- コミットメッセージは日本語で記述する
+- 例外として、コード識別子・コマンド・URL・外部仕様名（例: `TypeScript`, `LeetCode`）は英語表記を許容する
 
 ## Commit Message Format
 
