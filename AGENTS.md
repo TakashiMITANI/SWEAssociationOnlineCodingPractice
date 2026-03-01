@@ -45,8 +45,10 @@
 - すべてのコミットメッセージに `Refs #<issue-number>` を含める
 - PR本文に `Refs #<issue-number>` を含める
 - Issue はラベル（`status/*`, `priority/*`, `type/*`）で管理し、`status/*` は常に1つだけ付ける
+- 学習課題 Issue は `.github/ISSUE_TEMPLATE/learning-task.yml` 準拠の本文で作成・更新する
 - 問題ディレクトリは `solutions/leetcode/{problem-slug}/` を必須とする
 - 実装言語は TypeScript に統一する
+- Issue クローズは DoD を満たした場合のみ行う（`main` マージ済み、検証結果と必要メモ記録済み、`status/done` 更新済み）
 
 ## Command Permission Policy
 
