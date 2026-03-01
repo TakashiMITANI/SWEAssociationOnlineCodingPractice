@@ -30,3 +30,13 @@
 - 問題の解答に関する質問を AI へ依頼しない
 - Issue / PR / コミットの関連付けを必ず行う
 - Issue / PR / コミットメッセージ（必要なコメント含む）は日本語で記述する
+- 学習課題 Issue は `.github/ISSUE_TEMPLATE/learning-task.yml` 準拠で作成・更新する
+
+## Issue DoD / Close Rule
+
+- Issue の Learning Progress Checklist と PR/Review/Close のチェック項目を更新しながら進める
+- `status/done` は次を満たしたときにのみ付与する:
+  - 対象PRが `main` にマージ済み
+  - 検証結果と必要なメモを Issue コメントに記録済み
+  - PR チェックリストが完了
+- Issue は `status/done` を確認してから `status/closed` に更新してクローズする

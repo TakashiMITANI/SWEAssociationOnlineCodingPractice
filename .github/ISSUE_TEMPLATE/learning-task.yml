@@ -55,3 +55,24 @@ body:
         - label: 可読性を改善して動作確認した（第2段階）
         - label: 10分以内・ノーエラーで実装できた
         - label: 上記を3回連続で達成した
+
+  - type: checkboxes
+    id: pr_review_close_checklist
+    attributes:
+      label: PR / Review / Close Checklist (DoD)
+      description: PR作成以降の運用チェックです。Issue クローズ前に完了してください。
+      options:
+        - label: ブランチ `solve/{problem-slug}` を作成して着手した（`status/in-progress`）
+        - label: "PR を作成し、本文に `Refs #<issue-number>` を記載した（`status/in-review`）"
+        - label: レビュー指摘対応中は `status/review-fix` へ更新し、再レビュー依頼時に `status/in-review` へ戻した
+        - label: PR を `Squash and merge` で `main` にマージした
+        - label: 検証結果と必要なメモを Issue コメントに記録した
+        - label: `status/done` に更新後、`status/closed` に更新して Issue をクローズした
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Done Definition（クローズ条件）
+        - `main` へマージ済み
+        - 検証結果と必要メモを Issue コメントに記録済み
+        - PR のチェックリスト完了済み
