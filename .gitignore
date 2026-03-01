@@ -29,4 +29,6 @@ __pycache__/
 
 # Node.js
 node_modules/
-
+.eslintcache
+*.tsbuildinfo
+.npm/
