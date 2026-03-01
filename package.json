@@ -1,0 +1,18 @@
+{
+  "name": "swe-association-online-coding-practice",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "find solutions/leetcode -type f -name \"*.test.ts\" ! -path \"solutions/leetcode/_template/*\" -print0 | xargs -0 -r node --import tsx --test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^24.11.0",
+    "eslint": "^9.22.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  }
+}

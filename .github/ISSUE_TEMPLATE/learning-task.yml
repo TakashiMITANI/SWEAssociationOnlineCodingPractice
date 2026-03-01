@@ -1,0 +1,57 @@
+name: Learning Task
+description: arai60 の学習タスクを管理する
+title: "[Task] "
+labels:
+  - type/learning-task
+  - status/todo
+  - priority/p2
+body:
+  - type: input
+    id: problem_url
+    attributes:
+      label: LeetCode URL
+      placeholder: https://leetcode.com/problems/two-sum/
+    validations:
+      required: true
+
+  - type: input
+    id: problem_slug
+    attributes:
+      label: Problem Slug
+      placeholder: two-sum
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: 方針、気づき、懸念点など
+
+  - type: checkboxes
+    id: policy_checklist
+    attributes:
+      label: Policy Checklist (作成時確認)
+      options:
+        - label: 既定ラベル（type/learning-task, status/todo, priority/p2）で作成されることを理解している
+          required: true
+        - label: 問題をAIに解かせず、自分で実装する
+          required: true
+        - label: 進捗は Issue ラベルで管理し、必要なメモは Issue コメントに残す
+          required: true
+        - label: ラベル運用ルール（docs/10_workflow/issue-labels.md）に従う
+          required: true
+
+  - type: checkboxes
+    id: progress_checklist
+    attributes:
+      label: Learning Progress Checklist (完了まで更新)
+      description: このチェックリストは Issue 作成後に更新してください。
+      options:
+        - label: 5分は自力で考えた
+        - label: 5分で詰まった箇所は解答を見て理解した
+        - label: 解答を隠して再現実装した（詰まったら見直し後に全消ししてやり直し）
+        - label: 一度 Accepted した（第1段階）
+        - label: 可読性を改善して動作確認した（第2段階）
+        - label: 10分以内・ノーエラーで実装できた
+        - label: 上記を3回連続で達成した
