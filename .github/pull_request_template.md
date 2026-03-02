@@ -32,15 +32,14 @@
 
 レビュー対象ファイル:
 
-- [ ] `solutions/leetcode/{problem-slug}/solution-1st.ts`
-- [ ] `solutions/leetcode/{problem-slug}/solution-2nd.ts`
 - [ ] `solutions/leetcode/{problem-slug}/solution-3rd.ts`
-- [ ] `solutions/leetcode/{problem-slug}/solution.test.ts`
-- [ ] その他:
+- [ ] `solutions/leetcode/{problem-slug}/README.md`
 
 レビュー対象外ファイル（確認不要・参考のみ）:
 
-- [ ] `solutions/leetcode/{problem-slug}/README.md`
+- [ ] `solutions/leetcode/{problem-slug}/solution-1st.ts`
+- [ ] `solutions/leetcode/{problem-slug}/solution-2nd.ts`
+- [ ] `solutions/leetcode/{problem-slug}/solution.test.ts`
 - [ ] `solutions/leetcode/{problem-slug}/solution-target.ts`
 - [ ] その他:
 
