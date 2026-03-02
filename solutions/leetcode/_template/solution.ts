@@ -1,5 +1,5 @@
 export function solve(input: unknown): unknown {
   void input;
-  // Replace with your implementation for each problem.
-  throw new Error("Not implemented");
+  // 各問題の実装に置き換える。
+  throw new Error("未実装です。問題ごとのロジックに置き換えてください。");
 }

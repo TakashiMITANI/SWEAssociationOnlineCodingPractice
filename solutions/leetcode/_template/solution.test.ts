@@ -1,8 +1,10 @@
 import { describe, it } from "node:test";
+import { solve } from "./solution-target";
 
 describe("solve", () => {
-  it("works for the first sample case", () => {
-    // Replace this test with each problem's sample before running.
-    throw new Error("Replace template test input/expected before running tests.");
+  it("サンプルケースで期待値を満たす", () => {
+    void solve;
+    // 問題ごとのサンプル入力・期待値に置き換えてから実行する。
+    throw new Error("テンプレートのテスト入力・期待値を更新してから実行してください。");
   });
 });
