@@ -6,8 +6,9 @@
 
 ## ファイル運用（1st/2nd/3rd）
 
-- 初期テンプレートは `solution.ts` を参照します
-- 試行を分けて保持する場合は `solution-1st.ts`, `solution-2nd.ts`, `solution-3rd.ts` を作成します
+- 初期テンプレートは `solution-1st.ts`, `solution-2nd.ts`, `solution-3rd.ts` を含みます
+- 最終提出対象は `solution-3rd.ts` とし、`solution-1st.ts` / `solution-2nd.ts` は学習過程として保持します
+- `solution-target.ts` の import 先は最終提出対象に合わせて切り替えます
 - テスト対象は `solution-target.ts` の import 先を切り替えて選びます
 
 例:
@@ -33,7 +34,7 @@ export { solve };
 
 ## 最終決定（リポジトリに残す）
 
-- 採用した方針:
+- 採用した方針: 問題を解くために採用したアルゴリズム・着眼点を記録する
 - 計算量（時間/空間）:
 - 代替案と不採用理由:
 - レビューでの合意事項:

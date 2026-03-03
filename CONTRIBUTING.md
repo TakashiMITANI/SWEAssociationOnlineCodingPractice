@@ -31,6 +31,7 @@
 - Issue / PR / コミットの関連付けを必ず行う
 - Issue / PR / コミットメッセージ（必要なコメント含む）は日本語で記述する
 - 学習課題 Issue は `.github/ISSUE_TEMPLATE/learning-task.yml` 準拠で作成・更新する
+- 3回運用時は `solution-3rd.ts` を最終提出対象とし、`solution-1st.ts` / `solution-2nd.ts` は学習過程として保持する
 
 ## Issue DoD / Close Rule
 

@@ -45,6 +45,7 @@
 - 必要な検証結果・メモは Issue コメントに残す
 - レビューで使う実装根拠（方針、計算量、トレードオフ）は PR 本文に記載する
 - レビューで最終合意した決定事項は `solutions/leetcode/{problem-slug}/README.md` に反映する
+- 3回運用時は `solution-3rd.ts` を最終提出対象とし、`solution-1st.ts` / `solution-2nd.ts` は学習過程として保持する
 - PR作成時は `.github/pull_request_template.md` のチェックを満たす
 - `main` にマージ後は対象ブランチを削除する（remote/local）
 - PR のタイトル・本文・コメントは日本語で記述する

@@ -27,13 +27,14 @@
 - `solution-1st.ts`: 1回目の実装（任意）
 - `solution-2nd.ts`: 2回目の実装（任意）
 - `solution-3rd.ts`: 3回目の実装（任意）
-- `solution.ts`: 単一ファイルで進める場合の解答コード（任意）
 - `solution.test.ts`: テストコード（必要に応じて）
 
 テンプレート:
 
 - `solutions/leetcode/_template/README.md`
-- `solutions/leetcode/_template/solution.ts`
+- `solutions/leetcode/_template/solution-1st.ts`
+- `solutions/leetcode/_template/solution-2nd.ts`
+- `solutions/leetcode/_template/solution-3rd.ts`
 - `solutions/leetcode/_template/solution-target.ts`
 - `solutions/leetcode/_template/solution.test.ts`
 
@@ -41,6 +42,8 @@
 
 - 1問題につき1ディレクトリ
 - 試行を分ける場合は `solution-1st.ts`, `solution-2nd.ts`, `solution-3rd.ts` の命名を使う
+- 3回運用時の最終提出対象は `solution-3rd.ts` とする
+- `solution-1st.ts` と `solution-2nd.ts` は学習過程の記録として保持する
 - テスト対象の切り替えは `solution-target.ts` の import 先変更で行う
 - 問題ディレクトリ名に番号プレフィックスは付けない
 - 空ディレクトリはコミットしない
