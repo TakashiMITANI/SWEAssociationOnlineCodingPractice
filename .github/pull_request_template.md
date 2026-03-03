@@ -26,6 +26,8 @@
 - 方針:
 - 計算量:
 - 代替案と不採用理由:
+- 最終提出対象: `solution-3rd.ts`
+- 学習過程として保持するファイル: `solution-1st.ts`, `solution-2nd.ts`
 - 最終決定として残す内容（solution README へ反映）:
 
 ## レビュー対象範囲
@@ -61,6 +63,7 @@
 - [ ] `solve/*` のPRは `Squash and merge` で `main` にマージする
 - [ ] すべてのコミットメッセージに `Refs #<issue-number>` を含めた
 - [ ] PR本文に `Refs #<issue-number>` を記載した
+- [ ] 最終提出対象を `solution-3rd.ts` とし、`solution-1st.ts` / `solution-2nd.ts` を学習過程として保持した
 - [ ] レビューで合意した最終決定を `solutions/leetcode/{problem-slug}/README.md` に反映した
 - [ ] 不要なファイル変更が含まれていない
 - [ ] `main` への直接 push はしていない
