@@ -26,12 +26,12 @@ export function hasCycle(head: ListNode | null): boolean {
   let fast: ListNode | null = head;
 
   // fast が2手進める間だけループを継続する（進めなくなったらサイクルなし）。
-  while ( slow !== null && fast !== null && fast.next !== null ){
+  while (slow !== null && fast !== null && fast.next !== null) {
     slow = slow.next;
     fast = fast.next.next;
 
     // 同じノード参照に到達した時点でサイクルあり。
-    if ( slow === fast ){
+    if (slow === fast) {
       return true;
     }
   }
