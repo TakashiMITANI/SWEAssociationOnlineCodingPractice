@@ -22,8 +22,8 @@ export function hasCycle(head: ListNode | null): boolean {
   let slow: ListNode | null = head;
   let fast: ListNode | null = head;
 
-  while ( fast !== null && fast.next !== null) {
-    slow =  slow !== null ? slow.next : null;
+  while (fast !== null && fast.next !== null) {
+    slow = slow !== null ? slow.next : null;
     fast = fast.next.next
     if (slow === fast) {
       return true;
