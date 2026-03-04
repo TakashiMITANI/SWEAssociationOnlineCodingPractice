@@ -75,7 +75,7 @@ Issue ラベル運用:
 
 1. `docs/10_workflow/branch-strategy.md` に従って課題用ブランチを作成する
 2. `solutions/leetcode/{problem-slug}/` を作成し、`solutions/leetcode/_template/` をコピーする
-3. 解答とテスト（必要に応じて）を追加して確認する
+3. 解答とテストを追加し、`npm run format:check` と `npm run lint` で確認する
 4. PR を作成し、`main` にマージする
 5. Issue を `status/done` に更新し、必要なメモをコメントに残す
 6. マージ済みブランチを削除する

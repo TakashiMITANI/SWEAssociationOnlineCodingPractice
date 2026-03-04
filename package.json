@@ -4,13 +4,22 @@
   "private": true,
   "scripts": {
     "test": "find solutions/leetcode -type f -name \"*.test.ts\" ! -path \"solutions/leetcode/_template/*\" -print0 | xargs -0 -r node --import tsx --test",
+    "format": "prettier \"**/*.{ts,js,mjs,json}\" --write",
+    "format:check": "prettier \"**/*.{ts,js,mjs,json}\" --check",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,js,mjs,json}": "prettier --write"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
     "@types/node": "^24.11.0",
     "eslint": "^9.22.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.8.1",
     "tsx": "^4.19.4",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.1"
