@@ -4,15 +4,11 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "strict": true,
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": [
-    "solutions/**/*.ts"
-  ]
+  "include": ["solutions/**/*.ts"]
 }

@@ -22,6 +22,16 @@ gh auth login -h github.com --git-protocol https --web
 npm install
 ```
 
+`npm install` 後は `prepare` スクリプトで Husky フックが有効化されます。
+`git commit` 実行時に、ステージ済みファイルの整形と `lint` / `test` が自動実行されます。
+
+整形とLintを確認:
+
+```bash
+npm run format:check
+npm run lint
+```
+
 ## 2. Create Issue
 
 ```bash
