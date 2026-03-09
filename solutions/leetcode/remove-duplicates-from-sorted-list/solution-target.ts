@@ -1,6 +1,5 @@
-// 1st/2nd/3rd を切り替えるときは import 先を変更する。
-import { solve } from "./solution-1st";
-// import { solve } from "./solution-2nd";
-// import { solve } from "./solution-3rd";
-
-export { solve };
+// テスト対象を切り替えるための集約ファイル。
+// 1stトライ: "./solution-1st"
+// 2ndトライ: "./solution-2nd"
+// 3rdトライ: "./solution-3rd"
+export { deleteDuplicates, ListNode } from "./solution-3rd";
