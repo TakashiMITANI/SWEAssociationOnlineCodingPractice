@@ -14,27 +14,27 @@
 例:
 
 ```ts
-import { solve } from "./solution-2nd";
+import { deleteDuplicates, ListNode } from "./solution-2nd";
 
-export { solve };
+export { deleteDuplicates, ListNode };
 ```
 
 ## 実行
 
 ```bash
-# 例: プロジェクト標準の TypeScript 実行コマンドを記載
-# npm run test
-# node --import tsx --test solutions/leetcode/remove-duplicates-from-sorted-list/solution.test.ts
-# npm run lint -- solutions/leetcode/remove-duplicates-from-sorted-list/solution.test.ts
+npm run format:check
+npm run lint -- solutions/leetcode/remove-duplicates-from-sorted-list
+node --import tsx --test solutions/leetcode/remove-duplicates-from-sorted-list/solution.test.ts
 ```
 
 ## メモ
 
-- 必要なメモを記録
+- 1st は `Set` + ソート + 再構築で実装可能だが、ソート済み前提では過剰
+- 2nd/3rd でソート済み前提に合わせた隣接比較へ整理
 
 ## 最終決定（リポジトリに残す）
 
-- 採用した方針: 問題を解くために採用したアルゴリズム・着眼点を記録する
-- 計算量（時間/空間）:
-- 代替案と不採用理由:
-- レビューでの合意事項:
+- 採用した方針: 現在ノードと次ノードを比較し、値が同じなら `current.next = current.next.next` で重複ノードを除去。異なるときだけ `current` を進める
+- 計算量（時間/空間）: 時間 `O(n)` / 空間 `O(1)`
+- 代替案と不採用理由: `Set` へ収集して再構築する方法は `O(n)` 追加メモリが必要で、ソート済み前提を活かせないため不採用
+- レビューでの合意事項: レビューで更新
